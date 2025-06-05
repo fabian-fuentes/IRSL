@@ -37,10 +37,6 @@ Es importante considerar que el código está escrito en el paquete estadístico
 - tidyverse_1.3.2
 - stratification_2.2-7
 - fpc_2.2-10
-
-Cualquier duda o aclaración, consultar a: 	
-drojas@coneval.org.mx
-mrgalindo@coneval.org.mx
 cfuentes@coneval.org.mx
 
 Tel: 54817200
