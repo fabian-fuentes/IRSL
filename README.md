@@ -1,6 +1,23 @@
 # IRSL
 
 Índice de Rezago Social Longitudinal (IRSL), 2000-2020
+## Setup Instructions
+
+The following steps outline how to prepare your environment to run the IRSL calculation scripts.
+
+1. Ensure you have **R 4.0 or newer** and **RStudio** installed.
+2. Clone or download this repository.
+3. Open `proyecto_IRSL.Rproj` in RStudio.
+4. Install the required packages:
+
+   ```r
+   install.packages(c("data.table", "foreign", "tidyverse", "stratification", "fpc"))
+   ```
+
+5. Copy the census and survey data into the `bases` folder if they are not already included.
+6. Run `ITER_15.R` to generate variables for the 2015 Intercensal Survey.
+7. Execute `programa_de_calculo_IRSL.R` or `programa_de_calculo_RSL_entidades.R` as needed.
+
 
 Los programas de cálculo del Índice de Rezago Social Longitudinal (IRSL) utilizan las bases del Conteo de Población y Vivienda 2005 y el Censo de Población y Vivienda 2000, 2010 y 2020, las cuales se encuentran en la carpeta "bases" de este proyecto. En el caso del año 2015 se utilizan las bases de la "Encuesta Intercensal 2015" para lo cual se deben crear las variables necesarias para el cálculo del IRSL, en este sentido se pone a su disposición el programa de cálculo "ITER_15.R" en el cual se muestra el proceso de construcción de las variables antes mencionadas para su posterior uso en los programas de cálculo del IRSL. Es importante mencionar que para el funcionamiento del programa de cálculo "ITER_15.R" es necesario contar con las bases de datos de la "Encuesta Intercensal 2015" en formato .csv, las cuales están disponibles en el sitio del INEGI https://www.inegi.org.mx/programas/intercensal/2015/#Microdatos
 
